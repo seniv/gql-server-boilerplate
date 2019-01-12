@@ -1,3 +1,3 @@
 import { log } from './module';
 
-log('hello world!');
+log('hello nodemon!');

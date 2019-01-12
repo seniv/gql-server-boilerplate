@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node ./src/index",
+    "start": "nodemon --exec babel-node ./src/index",
     "build": "babel src -d build"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "@babel/preset-env": "^7.2.3",
     "eslint": "^5.12.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.9"
   }
 }

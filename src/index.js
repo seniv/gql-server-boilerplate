@@ -1,3 +1,5 @@
+import './startup';
+
 import Express from 'express';
 import { apolloServer } from './graphql';
 

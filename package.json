@@ -1,0 +1,19 @@
+{
+  "name": "gql-server-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seniv/gql-server-boilerplate.git"
+  },
+  "author": "Ivan Seniv <seniv97@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seniv/gql-server-boilerplate/issues"
+  },
+  "homepage": "https://github.com/seniv/gql-server-boilerplate#readme"
+}

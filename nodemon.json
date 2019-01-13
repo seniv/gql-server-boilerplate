@@ -1,0 +1,9 @@
+{
+  "watch": [
+    ".env",
+    ".babelrc",
+    "nodemon.json",
+    "src/*"
+  ],
+  "ext": "js mjs json gql graphql"
+}

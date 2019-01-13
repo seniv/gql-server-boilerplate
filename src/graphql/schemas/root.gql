@@ -5,6 +5,6 @@ type Query {
   _: Boolean
 }
 
-type Mutataion {
+type Mutation {
   _: Boolean
 }

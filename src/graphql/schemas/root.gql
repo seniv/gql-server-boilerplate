@@ -1,0 +1,10 @@
+# We have to define Query and Mutation types
+# because we will extend this types in future
+
+type Query {
+  _: Boolean
+}
+
+type Mutataion {
+  _: Boolean
+}

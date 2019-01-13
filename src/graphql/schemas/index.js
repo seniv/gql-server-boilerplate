@@ -1,9 +1,9 @@
-export const typeDefs = `
-  schema {
-    query: Query
-  }
+import { flatten } from 'ramda';
 
-  type Query {
-    hello: String
-  }
-`;
+import Root from './root.gql';
+import { User } from './user';
+
+export const typeDefs = flatten([
+  Root,
+  User,
+]);

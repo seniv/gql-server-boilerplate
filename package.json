@@ -35,6 +35,7 @@
     "envalid": "^4.1.4",
     "express": "^4.16.4",
     "graphql": "^14.0.2",
-    "mongoose": "^5.4.3"
+    "mongoose": "^5.4.3",
+    "ramda": "^0.26.1"
   }
 }

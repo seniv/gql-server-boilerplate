@@ -1,17 +1,14 @@
 import './startup';
 
 import Express from 'express';
-import { apolloServer } from './graphql';
 
-const {
-  GRAPHQL_ENDPOINT = '/graphql',
-  PORT = 3001,
-} = process.env;
+import { apolloServer } from './graphql';
+import config from './config';
 
 const app = Express();
 
-apolloServer.applyMiddleware({ app, path: GRAPHQL_ENDPOINT });
+apolloServer.applyMiddleware({ app, path: config.GRAPHQL_ENDPOINT });
 
-app.listen(PORT, () => {
-  console.log(`GraphQL endpoint: http://localhost:${PORT}${GRAPHQL_ENDPOINT}`);
+app.listen(config.PORT, () => {
+  console.log(`GraphQL endpoint: http://localhost:${config.PORT}${config.GRAPHQL_ENDPOINT}`);
 });

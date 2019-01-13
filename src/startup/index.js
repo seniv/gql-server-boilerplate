@@ -1,2 +1,1 @@
-import './loadConfigs';
 import './connectToMongo';

@@ -32,10 +32,13 @@
   },
   "dependencies": {
     "apollo-server-express": "^2.3.1",
+    "bcrypt": "^3.0.3",
     "envalid": "^4.1.4",
     "express": "^4.16.4",
     "graphql": "^14.0.2",
+    "jsonwebtoken": "^8.4.0",
     "mongoose": "^5.4.3",
-    "ramda": "^0.26.1"
+    "ramda": "^0.26.1",
+    "validator": "^10.10.0"
   }
 }

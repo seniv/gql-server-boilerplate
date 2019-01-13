@@ -1,8 +1,7 @@
-type Question {
+type Answer {
   id: ID!
-  title: String!
   description: String!
   createdAt: DateTime!
   author: User!
-  answers: [Answer]!
+  question: Question
 }

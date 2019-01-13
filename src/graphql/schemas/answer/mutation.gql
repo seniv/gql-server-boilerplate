@@ -1,0 +1,19 @@
+input createAnswerInput {
+  description: String!
+}
+
+input updateAnswerInput {
+  description: String!
+}
+
+extend type Mutation {
+  createAnswer(
+    questionId: ID!
+    input: createAnswerInput!
+  ): Answer!
+  updateAnswer(
+    id: ID!
+    input: createAnswerInput!
+  ): Answer!
+  removeAnswer(id: ID): Answer!
+}

@@ -10,4 +10,5 @@ type User {
   profile: UserProfile
   createdAt: DateTime!
   questions: [Question]!
+  answers: [Answer]!
 }

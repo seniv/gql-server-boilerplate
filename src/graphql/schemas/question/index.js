@@ -6,4 +6,4 @@ export const Question = [
   type,
   query,
   mutation,
-].join('');
+];

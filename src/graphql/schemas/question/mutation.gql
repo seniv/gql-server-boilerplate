@@ -1,0 +1,18 @@
+input createQuestionInput {
+  title: String!
+  description: String!
+}
+
+input updateQuestionInput {
+  title: String
+  description: String
+}
+
+extend type Mutation {
+  createQuestion(input: createQuestionInput!): Question!
+  updateQuestion(
+    id: ID!
+    input: updateQuestionInput!
+  ): Question!
+  removeQuestion(id: ID!): Question!
+}

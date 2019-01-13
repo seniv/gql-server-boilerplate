@@ -1,0 +1,4 @@
+extend type Query {
+  questions: [Question]
+  question(id: ID!): Question!
+}

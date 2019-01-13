@@ -9,4 +9,5 @@ type User {
   role: String!
   profile: UserProfile
   createdAt: DateTime!
+  questions: [Question]!
 }

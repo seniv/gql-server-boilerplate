@@ -5,5 +5,13 @@
         "node": "current"
       }
     }]
+  ],
+  "plugins": [
+    ["inline-import", {
+      "extensions": [
+        ".gql",
+        ".graphql"
+      ]
+    }]
   ]
 }

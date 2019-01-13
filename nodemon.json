@@ -5,5 +5,8 @@
     "nodemon.json",
     "src/*"
   ],
-  "ext": "js mjs json gql graphql"
+  "ext": "js mjs json gql graphql",
+  "env": {
+    "BABEL_DISABLE_CACHE": 1
+  }
 }

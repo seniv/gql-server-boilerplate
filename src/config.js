@@ -17,4 +17,7 @@ export default cleanEnv(process.env, {
   MONGO_URI: url({
     desc: 'URI of MongoDB server to connect with',
   }),
+  JWT_SECRET: str({
+    desc: 'Random string. Used to sign JWT tokens',
+  }),
 });

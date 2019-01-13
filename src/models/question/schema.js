@@ -22,6 +22,11 @@ const schema = new Schema({
     default: Date.now,
     required: true,
   },
+  isResolved: {
+    type: Boolean,
+    required: true,
+    default: false,
+  },
 });
 
 export { schema };

@@ -8,7 +8,7 @@ const cannotDeleteError = errorIfNotFound('You cannot detele this answer');
 
 export const Mutation = {
   createAnswer: authRequired((_, { questionId, input }, { user }) =>
-    Question.findById(questionId)
+    Question.find({ _id: questionId, isResolved: false })
       .then(cannotAddError)
       .then(() => Answer.create({
         ...input,

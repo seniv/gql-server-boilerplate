@@ -15,4 +15,5 @@ extend type Mutation {
     input: updateQuestionInput!
   ): Question!
   removeQuestion(id: ID!): Question!
+  markQuestionAsResolved(id: ID!): Question!
 }

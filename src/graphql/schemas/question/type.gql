@@ -3,6 +3,7 @@ type Question {
   title: String!
   description: String!
   createdAt: DateTime!
+  isResolved: Boolean!
   author: User!
   answers: [Answer]!
 }

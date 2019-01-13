@@ -1,3 +1,3 @@
 export const Query = {
-  user: () => ({ name: 'graphql' }),
+  currentUser: (_, __, { user }) => user,
 };

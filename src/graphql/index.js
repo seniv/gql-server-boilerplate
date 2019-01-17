@@ -12,4 +12,5 @@ export const apolloServer = new ApolloServer({
     user: await getUserFromRequest(req),
   }),
   playground: !config.isProduction || config.ENABLE_PLAYGROUND,
+  introspection: !config.isProduction || config.ENABLE_PLAYGROUND,
 });

@@ -3,6 +3,7 @@ import {
   port,
   str,
   url,
+  bool,
 } from 'envalid';
 
 export default cleanEnv(process.env, {
@@ -12,7 +13,15 @@ export default cleanEnv(process.env, {
   }),
   GRAPHQL_ENDPOINT: str({
     default: '/graphql',
-    desc: 'Path of graphql endpoit',
+    desc: 'Path of graphql endpoint',
+  }),
+  ENABLE_PLAYGROUND: bool({
+    default: false,
+    desc: 'Enable GraphQL Playground on production',
+  }),
+  NODE_ENV: str({
+    default: 'development',
+    desc: 'NodeJS Environment',
   }),
   MONGO_URI: url({
     desc: 'URI of MongoDB server to connect with',

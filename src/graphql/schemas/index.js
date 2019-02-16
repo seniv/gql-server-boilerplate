@@ -14,5 +14,3 @@ export const typeDefs = mergeTypes(flatten([
   Question,
   Answer,
 ]));
-
-console.log('merged', typeDefs);

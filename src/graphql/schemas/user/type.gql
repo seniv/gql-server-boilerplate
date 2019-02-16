@@ -5,7 +5,7 @@ type UserProfile {
 
 type User {
   id: ID!
-  email: String!
+  email: EmailAddress!
   role: String!
   profile: UserProfile
   createdAt: DateTime!

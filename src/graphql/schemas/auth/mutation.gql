@@ -3,7 +3,7 @@ type UserTokenPayload {
   token: String!
 }
 
-extend type Mutation {
+type Mutation {
   signIn(email: String!, password: String!): UserTokenPayload!
   signUp(
     email: String!

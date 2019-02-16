@@ -8,7 +8,7 @@ input updateQuestionInput {
   description: String
 }
 
-extend type Mutation {
+type Mutation {
   createQuestion(input: createQuestionInput!): Question!
   updateQuestion(
     id: ID!

@@ -6,7 +6,7 @@ input updateAnswerInput {
   description: String!
 }
 
-extend type Mutation {
+type Mutation {
   createAnswer(
     questionId: ID!
     input: createAnswerInput!

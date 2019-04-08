@@ -29,4 +29,6 @@ const schema = new Schema({
   },
 });
 
+schema.index({ title: 'text', description: 'text' });
+
 export { schema };

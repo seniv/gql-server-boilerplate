@@ -1,4 +1,7 @@
 type Query {
-  questions: [Question]
+  questions(
+    search: String
+  ): [Question]
   question(id: ID!): Question!
+  myQuestions: [Question]!
 }

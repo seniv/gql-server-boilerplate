@@ -65,5 +65,6 @@ OR
 - [x] Sign In & Sign Up with JWT
 - [x] Basic Query/Mutation
 - [x] Deployment to Heroku
+- [x] Husky - Run Eslint before commits
 - [ ] Dataloader
 - [ ] Subscriptions

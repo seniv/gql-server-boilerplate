@@ -66,5 +66,5 @@ OR
 - [x] Basic Query/Mutation
 - [x] Deployment to Heroku
 - [x] Husky - Run ESLint before commits
-- [ ] Dataloader
+- [x] Dataloader
 - [ ] Subscriptions

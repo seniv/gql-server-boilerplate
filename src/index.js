@@ -10,5 +10,5 @@ const app = Express();
 apolloServer.applyMiddleware({ app, path: config.GRAPHQL_ENDPOINT });
 
 app.listen(config.PORT, () => {
-  console.log(`GraphQL endpoint: http://localhost:${config.PORT}${config.GRAPHQL_ENDPOINT}`);
+  console.log(`📡 GraphQL endpoint: http://localhost:${config.PORT}${config.GRAPHQL_ENDPOINT}`);
 });

@@ -1,7 +1,5 @@
-import { User } from '../../../models/user';
-import { Question } from '../../../models/question';
 
 export const answerTypes = {
-  author: ({ createdById }) => User.findById(createdById),
-  question: ({ questionId }) => Question.findById(questionId),
+  author: ({ createdById }, _, { loaders: { userById } }) => userById.load(createdById),
+  question: ({ questionId }, _, { loaders: { questionById } }) => questionById.load(questionId),
 };

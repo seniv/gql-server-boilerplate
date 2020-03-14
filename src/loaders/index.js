@@ -5,7 +5,7 @@ import { User } from '../models/user';
 import { Question } from '../models/question';
 import { Answer } from '../models/answer';
 
-const createLoader = (collection, { keyField = '_id' }) => {
+const createLoader = (collection, { keyField = '_id' } = {}) => {
   const batchFunction = async (keys) => {
     const docs = await collection.find({ [keyField]: { $in: keys } });
 
@@ -16,7 +16,7 @@ const createLoader = (collection, { keyField = '_id' }) => {
   return new DataLoader(batchFunction);
 };
 
-const createOneToMayLoader = (collection, { keyField = '_id' }) => {
+const createOneToMayLoader = (collection, { keyField = '_id' } = {}) => {
   const batchFunction = async (keys) => {
     const docs = await collection.find({ [keyField]: { $in: keys } });
 

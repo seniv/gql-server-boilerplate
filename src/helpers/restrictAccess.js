@@ -1,5 +1,5 @@
 import { ApolloError } from 'apollo-server-express';
-import { UserRoles } from '../../models/user';
+import { UserRoles } from '../models/user';
 
 const anyRole = 'any';
 
@@ -11,7 +11,7 @@ const checkUserRole = (rolesToCheck, user) => {
   return rolesToCheck.includes(user.type);
 };
 
-const requiresUserOfRole = userRoles => callback => (root, args, context, info) => {
+const requiresUserOfRole = (userRoles) => (callback) => (root, args, context, info) => {
   if (!context.user) {
     throw new ApolloError('You should sign in to do this!', 'NOT_AUTHORIZED');
   }

@@ -1,5 +1,5 @@
-import { User } from '../../models/user';
-import { verifyAuthToken } from '../../helpers';
+import { User } from '../models/user';
+import { verifyAuthToken } from './passwordAndTokens';
 
 const getUser = async (authHeader) => {
   if (!authHeader) return null;

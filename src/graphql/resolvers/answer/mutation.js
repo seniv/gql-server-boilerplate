@@ -1,6 +1,6 @@
 import { Answer } from '../../../models/answer';
 import { Question } from '../../../models/question';
-import { authRequired, errorIfNotFound } from '../../helpers';
+import { authRequired, errorIfNotFound } from '../../../helpers';
 
 const cannotAddError = errorIfNotFound('You cannot add answer to this question');
 const cannotEditError = errorIfNotFound('You cannot edit this answer');

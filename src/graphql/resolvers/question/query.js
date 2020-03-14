@@ -1,5 +1,5 @@
 import { Question } from '../../../models/question';
-import { authRequired } from '../../helpers';
+import { authRequired } from '../../../helpers';
 
 export const Query = {
   questions: (_, { search }) =>

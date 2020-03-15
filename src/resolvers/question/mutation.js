@@ -1,5 +1,5 @@
-import { Question } from '../../../models/question';
-import { authRequired, errorIfNotFound } from '../../../helpers';
+import { Question } from '../../models/question';
+import { authRequired, errorIfNotFound } from '../../helpers';
 
 const cannotEditError = errorIfNotFound('You cannot edit this question');
 const cannotDeleteError = errorIfNotFound('You cannot detele this question');

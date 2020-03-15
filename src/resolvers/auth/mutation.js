@@ -1,13 +1,13 @@
 import { ApolloError } from 'apollo-server-express';
 import { isEmail } from 'validator';
 
-import { User, UserRoles } from '../../../models/user';
+import { User, UserRoles } from '../../models/user';
 import { loginErrors, registerErrors } from './authErrors';
 import {
   signAuthToken,
   comparePasswords,
   hashPassword,
-} from '../../../helpers';
+} from '../../helpers';
 
 export const Mutation = {
   signIn: async (_, { email, password }) => {

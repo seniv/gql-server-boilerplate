@@ -1,10 +1,10 @@
-import { Answer } from '../../../models/answer';
-import { Question } from '../../../models/question';
-import { authRequired, errorIfNotFound } from '../../../helpers';
+import { Answer } from '../../models/answer';
+import { Question } from '../../models/question';
+import { authRequired, errorIfNotFound } from '../../helpers';
 
 const cannotAddError = errorIfNotFound('You cannot add answer to this question');
 const cannotEditError = errorIfNotFound('You cannot edit this answer');
-const cannotDeleteError = errorIfNotFound('You cannot detele this answer');
+const cannotDeleteError = errorIfNotFound('You cannot delete this answer');
 
 export const Mutation = {
   createAnswer: authRequired((_, { questionId, input }, { user }) =>

@@ -2,7 +2,7 @@ import './startup';
 
 import Express from 'express';
 
-import { apolloServer } from './graphql';
+import { apolloServer } from './apolloServer';
 import config from './config';
 
 const app = Express();

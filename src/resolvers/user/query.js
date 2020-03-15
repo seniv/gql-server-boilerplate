@@ -1,4 +1,4 @@
-import { User } from '../../../models/user';
+import { User } from '../../models/user';
 
 export const Query = {
   currentUser: (_, __, { user }) => user,

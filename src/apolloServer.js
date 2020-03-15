@@ -1,10 +1,10 @@
 import { ApolloServer } from 'apollo-server-express';
 
-import config from '../config';
+import config from './config';
 import { typeDefs } from './schemas';
 import { resolvers } from './resolvers';
-import { getUserFromRequest } from '../helpers';
-import { createDataLoaders } from '../loaders';
+import { getUserFromRequest } from './helpers';
+import { createDataLoaders } from './loaders';
 
 export const apolloServer = new ApolloServer({
   typeDefs,

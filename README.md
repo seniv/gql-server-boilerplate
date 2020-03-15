@@ -67,4 +67,4 @@ OR
 - [x] Deployment to Heroku
 - [x] Husky - Run ESLint before commits
 - [x] Dataloader
-- [ ] Subscriptions
+- [x] Subscriptions

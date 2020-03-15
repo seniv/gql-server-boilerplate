@@ -15,6 +15,10 @@ export default cleanEnv(process.env, {
     default: '/graphql',
     desc: 'Path of graphql endpoint',
   }),
+  SUBSCRIPTIONS_ENDPOINT: str({
+    default: '/subscriptions',
+    desc: 'Path of subscriptions endpoint',
+  }),
   ENABLE_PLAYGROUND: bool({
     default: false,
     desc: 'Enable GraphQL Playground on production',

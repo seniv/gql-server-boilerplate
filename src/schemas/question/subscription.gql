@@ -1,0 +1,5 @@
+type Subscription {
+  questionAdded: Question!
+  questionUpdated(id: ID!): Question!
+  questionRemoved(id: ID!): Question!
+}

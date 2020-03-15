@@ -1,4 +1,4 @@
-import { Question } from '../../models/question';
+import { Question } from '../../models';
 import { authRequired, errorIfNotFound, publishAndReturn } from '../../helpers';
 import { Subscriptions } from '../../constants';
 

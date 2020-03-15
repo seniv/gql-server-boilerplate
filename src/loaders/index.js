@@ -1,9 +1,7 @@
 import DataLoader from 'dataloader';
 import { indexBy, prop, groupBy } from 'ramda';
 
-import { User } from '../models/user';
-import { Question } from '../models/question';
-import { Answer } from '../models/answer';
+import { User, Question, Answer } from '../models';
 
 const oneToOneMapper = ({ docs, keys, keyField }) => {
   const indexed = indexBy(prop(keyField), docs);

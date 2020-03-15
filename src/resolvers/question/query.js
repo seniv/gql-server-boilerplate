@@ -1,4 +1,4 @@
-import { Question } from '../../models/question';
+import { Question } from '../../models';
 import { authRequired } from '../../helpers';
 
 export const Query = {

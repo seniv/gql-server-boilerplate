@@ -1,4 +1,4 @@
-import { User } from '../models/user';
+import { User } from '../models';
 import { verifyAuthToken } from './passwordAndTokens';
 
 export const getUser = async (authHeader) => {

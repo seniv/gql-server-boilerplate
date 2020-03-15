@@ -1,7 +1,8 @@
 import { ApolloError } from 'apollo-server-express';
 import { isEmail } from 'validator';
 
-import { User, UserRoles } from '../../models/user';
+import { User } from '../../models/user';
+import { UserRoles } from '../../constants';
 import { loginErrors, registerErrors } from './authErrors';
 import {
   signAuthToken,

@@ -1,5 +1,5 @@
 import { ApolloError } from 'apollo-server-express';
-import { UserRoles } from '../models/user';
+import { UserRoles } from '../constants';
 
 const anyRole = 'any';
 

@@ -2,7 +2,7 @@ import R from 'ramda';
 import { Schema } from 'mongoose';
 import { isEmail } from 'validator';
 
-import { UserRoles } from './constants';
+import { UserRoles } from '../../constants';
 
 const userProfile = {
   fullName: {

@@ -34,7 +34,7 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
-    "apollo-server-express": "^2.11.0",
+    "apollo-server-express": "^2.14.2",
     "bcrypt": "^4.0.1",
     "dataloader": "^2.0.0",
     "envalid": "^6.0.1",

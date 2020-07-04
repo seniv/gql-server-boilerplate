@@ -68,3 +68,4 @@ OR
 - [x] Husky - Run ESLint before commits
 - [x] Dataloader
 - [x] Subscriptions
+- [ ] TypeScript & Automatic type generation

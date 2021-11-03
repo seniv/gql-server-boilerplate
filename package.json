@@ -45,7 +45,7 @@
     "merge-graphql-schemas": "^1.7.6",
     "mongoose": "^5.9.4",
     "ramda": "^0.27.0",
-    "validator": "^12.2.0"
+    "validator": "^13.7.0"
   },
   "engines": {
     "node": "12.x"

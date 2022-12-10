@@ -38,7 +38,7 @@
     "bcrypt": "^4.0.1",
     "dataloader": "^2.0.0",
     "envalid": "^6.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "graphql": "^14.6.0",
     "graphql-scalars": "^1.0.7",
     "jsonwebtoken": "^8.5.1",

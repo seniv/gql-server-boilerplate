@@ -41,7 +41,7 @@
     "express": "^4.17.1",
     "graphql": "^14.6.0",
     "graphql-scalars": "^1.0.7",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "merge-graphql-schemas": "^1.7.6",
     "mongoose": "^5.9.4",
     "ramda": "^0.27.0",
